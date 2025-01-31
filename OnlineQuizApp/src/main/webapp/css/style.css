@@ -1,0 +1,319 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Lora:wght@400;600&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e8f0ff, #fef6e4); /* Aesthetic gradient background */
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif; /* Elegant font for headings */
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #ff7f50, #ff4500); /* Orange gradient */
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 10px 10px;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+header li{
+	text-decoration: none;
+}
+
+/* Main Content */
+main {
+    margin: 30px auto;
+    max-width: 90%;
+    padding: 20px;
+    background: #ffffff; /* White card background */
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.container {
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #ff7f50;
+    font-family: 'Lora', serif;
+}
+
+/* Login Options */
+.login-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.option {
+    width: 40%;
+    min-width: 250px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background: #f9f9f9;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+.option:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    background: #fff;
+}
+
+.option h3 {
+    color: #ff7f50;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.option p {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.option .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #ff7f50, #ff4500); /* Button gradient */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.option .btn:hover {
+    background: linear-gradient(90deg, #ff4500, #ff7f50);
+    transform: translateY(-3px);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.form-group {
+    width: 100%;
+    max-width: 350px;
+}
+
+label {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+button[type="submit"] {
+    padding: 12px 20px;
+    background: linear-gradient(90deg, #ff7f50, #ff4500);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(90deg, #ff4500, #ff7f50);
+    transform: translateY(-3px);
+}
+
+nav li{
+	list-style-type: none;
+}
+nav a{
+	margin: 0px;
+	
+    font-size: 1rem;
+    color: ghostwhite;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: black;
+}
+
+a {
+	margin: 0px;
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff4500;
+}
+
+
+
+/* Quiz Questions */
+.quiz-question {
+	width: 50rem;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fefefe;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.quiz-question:hover {
+    transform: translateY(-5px);
+}
+
+.quiz-question:last-child {
+    border-bottom: none;
+}
+
+.question-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ff7f50;
+}
+
+.quiz-question ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.quiz-question li {
+    padding: 10px 15px;
+    margin: 8px 0;
+    border-radius: 8px;
+    background: #f9f9f9;
+    color: #555;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.quiz-question li:hover {
+    background: #e8f0ff;
+}
+
+.quiz-question li.correct {
+    background: #d4edda;
+    color: #155724;
+    font-weight: bold;
+}
+
+.quiz-question li.highlight {
+    background: #ff7f50;
+    color: #721c24;
+}
+
+/* Review Container */
+.review-container {
+	width: 50rem;
+    margin-top: 30px;
+    padding: 20px;
+    background: #ffffff;
+    
+}
+
+.review-container .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #ff7f50, #ff4500);
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+    margin-top: 20px;
+}
+
+.review-container .btn:hover {
+    background: linear-gradient(90deg, #ff4500, #ff7f50);
+    transform: translateY(-3px);
+}
+
+.bton{
+	display: inline-block;
+	margin-top: 10px;
+	margin-left:25vw;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #ff7f50, #ff4500); /* Button gradient */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+   
+}
+table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            border: 1px solid #ddd;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: linear-gradient(90deg, #ff7f50, #ff4500);
+    color: #fff;
+    font-size: 0.9rem;
+    margin-top: auto;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px 10px 0 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
